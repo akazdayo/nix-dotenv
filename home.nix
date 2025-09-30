@@ -26,6 +26,11 @@
       enable = true;
       userName = "akazdayo";
       userEmail = "82073147+akazdayo@users.noreply.github.com";
+      extraConfig = {
+        init = {
+          defaultBranch = "main";
+        };
+      };
     };
   };
 }
