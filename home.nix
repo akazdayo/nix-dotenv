@@ -7,10 +7,10 @@
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
   home.packages = [
-    pkgs.hello
     pkgs.starship
     pkgs.bun
     pkgs.nodejs_22
+    pkgs.doppler
   ];
 
   home.file = {
