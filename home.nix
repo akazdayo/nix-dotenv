@@ -9,6 +9,8 @@
   home.packages = [
     pkgs.hello
     pkgs.starship
+    pkgs.bun
+    pkgs.nodejs_22
   ];
 
   home.file = {
