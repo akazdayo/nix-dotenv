@@ -11,6 +11,7 @@
     pkgs.bun
     pkgs.nodejs_22
     pkgs.doppler
+    pkgs.gh
   ];
 
   home.file = {
