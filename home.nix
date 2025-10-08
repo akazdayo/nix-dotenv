@@ -6,12 +6,15 @@
 
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
-  home.packages = [
-    pkgs.starship
-    pkgs.bun
-    pkgs.nodejs_22
-    pkgs.doppler
-    pkgs.gh
+  home.packages = with pkgs; [
+    starship
+    bun
+    nodejs_22
+    doppler
+    gh
+    tree
+    websocat
+    neovim
   ];
 
   home.file = {
@@ -34,6 +37,11 @@
           defaultBranch = "main";
         };
       };
+    };
+    direnv = {
+      enable = true;
+      enableBashIntegration = true;
+      nix-direnv.enable = true;
     };
   };
 }
