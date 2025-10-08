@@ -14,6 +14,7 @@
     gh
     tree
     websocat
+    ripgrep
   ];
 
   home.file = {
@@ -31,7 +32,9 @@
       enable = true;
 
       colorschemes.catppuccin.enable = true;
-      plugins.lualine.enable = true;
+      plugins = {
+        lualine.enable = true;
+      };
     };
     git = {
       enable = true;
