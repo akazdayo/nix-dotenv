@@ -14,7 +14,6 @@
     gh
     tree
     websocat
-    neovim
   ];
 
   home.file = {
@@ -23,11 +22,17 @@
   };
 
   home.sessionVariables = {
-    EDITOR = "vim";
+    EDITOR = "nvim";
   };
 
   programs = {
     home-manager.enable = true;
+    nixvim = {
+      enable = true;
+
+      colorschemes.catppuccin.enable = true;
+      plugins.lualine.enable = true;
+    };
     git = {
       enable = true;
       userName = "akazdayo";
