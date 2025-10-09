@@ -34,6 +34,9 @@
       colorschemes.catppuccin.enable = true;
       plugins = {
         lualine.enable = true;
+	cord.enable = true;
+	nvim-tree.enable = true;
+	web-devicons.enable = true;
       };
     };
     git = {
